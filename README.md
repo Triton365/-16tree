@@ -10,11 +10,12 @@
 scoreboard players set $index -16tree <N>
 function -16tree:index
 ```
-그러면 이제 배열의 `N`번째 요소을 다음 NBT 경로로 접근할 수 있습니다.
+그러면 이제 배열의 `N`번째 요소을 다음 NBT 경로로 접근할 수 있습니다.   
+다른 데이터팩과의 충돌을 피하기 위해 `namespace` key 사용을 권장합니다.
 ```mcfunction
 data get storage -16tree: t[-16].t[-16].t[-16].t[-16].t[-16].t[-16].t[-16].t[-16].namespace
 ```
-다른 데이터팩과의 충돌을 피하기 위해 `namespace` key 사용을 권장합니다.
+예제는 `-16tree:example`을 참고하세요.
 <br><br><br>
 
 장단점
