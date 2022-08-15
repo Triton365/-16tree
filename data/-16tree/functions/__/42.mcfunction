@@ -1,0 +1,3 @@
+execute if score $index -16tree matches ..786431 run data modify storage -16tree: t[-16].t[-16].t[-16].t append from storage -16tree: b[]
+execute if score $index -16tree matches 786432..851967 run data modify storage -16tree: t[-16].t[-16].t[-16].t append from storage -16tree: c[]
+execute if score $index -16tree matches 851968.. run data modify storage -16tree: t[-16].t[-16].t[-16].t append from storage -16tree: d[]
